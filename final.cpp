@@ -1,10 +1,3 @@
-//This code is distributed under the BSD 
-//license and it is a rewrite of code shared 
-//in class CSC431 at DePaul University 
-//by Massimo Di Pierro
-//Rewritten by Chengwei Chang & Weiguo Yan
-
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -657,7 +650,6 @@ class MyOtherFunction:public MultiVariableFunction
 };
 
 void testOfMatrix(){
-	// test for Class Matrix and its use
 	int r,c;
 	cout<<"input the rows and columns of Matrix A:";
 	cin>>r>>c;
@@ -724,7 +716,6 @@ void testOfMatrix(){
 }
 
 void testOfFunction(){
-	//  test for Class Function
 	cout<<MyFunction().solve_newton(4)<<endl;  
 	cout<<MyFunction().solve_fixed_point(4)<<endl;  
 	cout<<MyFunction().solve_bisection(0,3)<<endl;  
@@ -740,7 +731,6 @@ void testOfFunction(){
 }
 
 void testOfPartial(){
-	//  test for Class MultiVariableFunction
 	int n=2;
 	double a[3]={2,3,5};
 	int s = sizeof(a)/sizeof(double);
