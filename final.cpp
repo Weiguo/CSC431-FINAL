@@ -124,7 +124,7 @@ Matrix operator * (double a,Matrix &A) {
 
 Matrix operator * (const Matrix &A,Matrix &B) {
 	Matrix C(A.rows,B.cols);
-	if(A.cols==1&&B.cols==1&A.rows==B.rows)
+	if(A.cols==1&&B.cols==1&&A.rows==B.rows)
 		for(int r=0;r<A.rows;r++)
 			C(r,0)=A(r,0)*B(r,0);
 	else
@@ -722,7 +722,7 @@ void testOfFunction(){
 	cout<<MyFunction().solve_secant(4)<<endl;  
 	cout<<MyFunction().solve_newton_stabilized(1,3)<<endl;  
 	cout<<MyFunction().optimize_bisection(2,5)<<endl;  
-    cout<<MyFunction().optimize_newton(3)<<endl;  
+    	cout<<MyFunction().optimize_newton(3)<<endl;  
 	cout<<MyFunction().optimize_secant(3)<<endl;  
 	cout<<MyFunction().optimize_newton_stabilized(2,5)<<endl;  
 	cout<<MyFunction().optimize_golden_search(2,5)<<endl; 
